@@ -191,4 +191,23 @@ public abstract class IPage {
         return DEFAULT_PAGE_SIZE;
 
     }
+
+    /**
+     * 获取总页数
+     *
+     * @return 总页数
+     */
+    public int getPages(int totalCount) {
+        if (pageSize == 0) {
+            throw new IllegalArgumentException("pageSize 不能为 0");
+        }
+        int p = totalCount / pageSize;
+        if (totalCount % pageSize == 0) {
+            return p;
+        } else {
+            return p + 1;
+        }
+
+    }
+
 }
