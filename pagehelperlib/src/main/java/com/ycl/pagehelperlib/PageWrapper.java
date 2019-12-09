@@ -164,5 +164,15 @@ public class PageWrapper<T> {
 
     }
 
+    /**
+     * 获取总页数
+     *
+     * @param totalCount
+     * @return
+     */
+    public int getPages(int totalCount) {
+        return this.page.getPages(totalCount);
+    }
+
 
 }
