@@ -137,4 +137,32 @@ public class PageWrapper<T> {
     }
 
 
+    public int getPageCount() {
+        return this.page.getPageCount();
+    }
+
+    public void setPageCount(int pageCount) {
+        this.page.setPageCount(pageCount);
+
+    }
+
+    /**
+     * 设置分页大小
+     */
+    public void setPageSize(int pageSize) {
+
+        this.page.setPageSize(pageSize);
+    }
+
+    /**
+     * 返回分页大小
+     *
+     * @return
+     */
+    public int getPageSize() {
+        return this.page.getPageSize();
+
+    }
+
+
 }

@@ -188,7 +188,7 @@ public abstract class IPage {
      * @return
      */
     public int getPageSize() {
-        return DEFAULT_PAGE_SIZE;
+        return this.pageSize;
 
     }
 
